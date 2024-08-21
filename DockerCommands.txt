@@ -1,0 +1,5 @@
+Use the following line in Powershell to host the TensorFlow serving of the model onto Docker.
+
+docker run -d -p 8501:8501 -p 8500:8500 -v C:\Users\BKONG\Downloads\ultra-ai_08_24\my_serving_model:/models/ultra-ai-64 -e MODEL_NAME=ultra-ai-64 -t tensorflow/serving:latest
+
+Replace the folder directory and model names as neccessary.
